@@ -84,6 +84,7 @@ typedef NS_ENUM(NSInteger, TOCropViewControllerAspectRatio) {
     self.cropView.frame = (CGRect){(landscapeLayout ? 44.0f : 0.0f),0,(CGRectGetWidth(self.view.bounds) - (landscapeLayout ? 44.0f : 0.0f)), (CGRectGetHeight(self.view.bounds)-(landscapeLayout ? 0.0f : 44.0f)) };
     self.cropView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.cropView.delegate = self;
+    [self.cropView setAspectLockEnabledWithAspectRatio:CGSizeMake(1.0f, 1.0f) animated:YES];
     [self.view addSubview:self.cropView];
     
     self.toolbar = [[TOCropToolbar alloc] initWithFrame:CGRectZero];

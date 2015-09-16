@@ -88,6 +88,7 @@
     _clampButton.tintColor = [UIColor whiteColor];
     [_clampButton setImage:[TOCropToolbar clampImage] forState:UIControlStateNormal];
     [_clampButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [_clampButton setHidden:YES];
     [self addSubview:_clampButton];
     
     _rotateButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -103,6 +104,7 @@
     _resetButton.enabled = NO;
     [_resetButton setImage:[TOCropToolbar resetImage] forState:UIControlStateNormal];
     [_resetButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [_resetButton setHidden:YES];
     [self addSubview:_resetButton];
 }
 
