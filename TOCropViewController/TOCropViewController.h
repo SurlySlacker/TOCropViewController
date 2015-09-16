@@ -22,7 +22,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class TOCropViewController;
+@class TOCropViewController, TOCropToolbar, TOCropView;
 
 ///------------------------------------------------
 /// @name Delegate
@@ -57,6 +57,9 @@
 @end
 
 @interface TOCropViewController : UIViewController
+
+@property (nonatomic, strong) TOCropToolbar *toolbar;
+@property (nonatomic, strong) TOCropView *cropView;
 
 /**
  The original, uncropped image that was passed to this controller.
