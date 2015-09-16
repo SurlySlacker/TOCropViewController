@@ -119,8 +119,8 @@ typedef NS_ENUM(NSInteger, TOCropViewControllerAspectRatio) {
     if (animated && [UIApplication sharedApplication].statusBarHidden == NO) {
         [UIView animateWithDuration:0.3f animations:^{ [self setNeedsStatusBarAppearanceUpdate]; }];
         [self.cropView setGridOverlayHidden:NO animated:NO];
-        [self.cropView setAspectLockEnabledWithAspectRatio:CGSizeMake(1.0f, 1.0f) animated:true];
     }
+    [self.cropView setAspectLockEnabledWithAspectRatio:CGSizeMake(1.0f, 1.0f) animated:true];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

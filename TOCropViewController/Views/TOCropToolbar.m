@@ -119,9 +119,7 @@
     self.cancelTextButton.hidden = (verticalLayout);
     self.doneIconButton.hidden   = (!verticalLayout);
     self.doneTextButton.hidden   = (verticalLayout);
-    
-    self.rotateButton.hidden = self.rotateButtonHidden;
-    
+
     if (verticalLayout == NO) {
         CGRect frame = CGRectZero;
         frame.size.height = 44.0f;
