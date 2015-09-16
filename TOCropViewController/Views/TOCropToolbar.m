@@ -24,16 +24,6 @@
 
 @interface TOCropToolbar()
 
-@property (nonatomic, strong) UIButton *doneTextButton;
-@property (nonatomic, strong) UIButton *doneIconButton;
-
-@property (nonatomic, strong) UIButton *cancelTextButton;
-@property (nonatomic, strong) UIButton *cancelIconButton;
-
-@property (nonatomic, strong) UIButton *rotateButton;
-@property (nonatomic, strong) UIButton *resetButton;
-@property (nonatomic, strong) UIButton *clampButton;
-
 - (void)setup;
 - (void)buttonTapped:(id)button;
 

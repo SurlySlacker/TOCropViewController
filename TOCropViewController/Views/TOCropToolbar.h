@@ -23,6 +23,15 @@
 #import <UIKit/UIKit.h>
 
 @interface TOCropToolbar : UIView
+@property (nonatomic, strong) UIButton *doneTextButton;
+@property (nonatomic, strong) UIButton *doneIconButton;
+
+@property (nonatomic, strong) UIButton *cancelTextButton;
+@property (nonatomic, strong) UIButton *cancelIconButton;
+
+@property (nonatomic, strong) UIButton *rotateButton;
+@property (nonatomic, strong) UIButton *resetButton;
+@property (nonatomic, strong) UIButton *clampButton;
 
 /* Button feedback handler blocks */
 @property (nonatomic, copy) void (^cancelButtonTapped)(void);
